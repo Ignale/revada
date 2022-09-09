@@ -1,0 +1,224 @@
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Exo 2'
+  box-sizing: border-box
+  
+a
+  text-decoration: none  
+  color: $text-color
+  cursor: pointer
+h1
+  font-size: 50px
+  font-weight: 700
+  line-height: 130%
+  color: $text-color
+  @media (max-width: 768px)
+    font-size: 26px
+    
+h2
+  font-size: 40px
+  font-weight: 700
+  line-height: 130%
+  color: $text-color
+  a.more
+    font-size: 40px
+  @media (max-width: 768px)
+    font-size: 20px
+    a.more
+      font-size: 20px
+h3
+  font-size: 20px
+  font-weight: 600
+  line-height: 130%
+  color: $text-color
+h4
+  font-size: 16px
+  font-weight: 600
+  line-height: 140%
+  color: $text-color
+p
+  font-size: 18px
+  font-weight: 300
+  line-height: 28.8px 
+  color: $text-color
+a.more
+  font-size: 18px
+  font-weight: 600
+  color: $primary-colour
+  line-height: 23.40px
+  text-decoration: none
+  padding-bottom: 7px
+  border-bottom: 1px solid $primary-colour
+  &:hover
+    padding-bottom: 12px
+p
+  margin-block-start: 15px
+  margin-block-end: 15px  
+li
+  list-style: none
+.fixed
+  position: fixed
+  width: 100%
+  left: 50%
+  transform: translateX(-50%)
+  padding-right: 15px
+.main
+  margin-bottom: 13vw
+.container
+  display: flex
+  max-width: 1200px
+  margin: 0 auto
+  flex-direction: column
+  position: relative
+.container_mw800  
+  max-width: 800px  
+  margin: 0 auto
+  @media (max-width: 768px)
+    padding-left: 20px
+    padding-right: 20px
+  @media (max-width: 480px)
+    padding-left: 10px
+    padding-right: 10px
+ul.breadcramb
+  display: flex
+  margin-top: 30px
+  @media (max-width: 768px)
+    padding-bottom: 15px
+    overflow-x: auto
+  li
+    @media (max-width: 768px)
+      flex: 0 0 content
+  a
+    font-size: 16px
+    font-weight: 400
+    color: $passive-dark  
+    @media (max-width: 768px)
+      font-size: 12px
+
+      left: 140%
+ul.breadcramb li+li:before 
+  padding: 8px
+  color: $passive-dark
+  content: ">\00a0"
+.footer
+  background-color: $light-blue
+  padding-top: 7vw
+  @media (max-width: 768px)
+    padding-top: 50px
+.btn
+  border: none
+  cursor: pointer
+  padding: 20px 35px
+  font-size: 18px 
+  font-weight: 600
+  border-radius: $btn-radius
+  color: $btn-text-colour
+  background-color: $primary-colour
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  &:hover
+    background-color: $blue-grey
+    color: $primary-colour
+.btn-secondary
+  border-radius: 30px 
+  border: 1px solid #E1E4F3
+  background-color: #fff
+  box-shadow: 7px 7px 0px 0px rgba(225, 228, 243, 1) 
+  font-size: 20px 
+  font-weight: 600
+  cursor: pointer
+  color: $primary-colour
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  &:hover
+    background-color: $primary-colour
+    color: $blue-grey
+
+.big_card
+  position: fixed
+  background-color: #fff
+  top:50%
+  left:50%
+  transform: translate(-50%, -50%)
+  border-radius: 50px
+  box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+  @media ( max-width: 480px )
+    min-width: unset
+    border-radius: 0px
+    width: 100%
+.card
+  border-radius: 30px
+  overflow: hidden
+  background-color: $light-blue
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  &:hover
+    background-color: $blue-grey
+.postCard
+  border-radius: 30px
+  background-color: #fff
+  box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+
+.inputGroup
+  position: relative
+  label.active
+    transform: translateY(-230%)
+    left: 3%
+    font-size: 12px
+    @media  ( max-width: 480px )
+      font-size: 10px
+      transform: translateY(-250%)
+  label
+    position: absolute
+    top: 50%
+    left: 2%
+    transform: translateY(-50%)
+    font-size: 18px
+    background-color: #fff
+    font-weight: 400
+    color: #9396A5
+    
+    @media  ( max-width: 480px )
+      left: 20px
+      font-size: 14px
+    span
+      color: $red-text
+  input, textarea
+    font-size: 18px
+    font-weight: 400
+    padding: 12px 18px
+    border: 1px solid $blue-grey
+    border-radius: 15px
+    width: 100%
+    &:focus-visible
+      outline: 1px solid $primary-colour
+    @media  ( max-width: 480px )
+      font-size: 14px
+      padding: 15px 20px
+  
+.custom_checkbox  
+  position: relative
+  margin-bottom: 10px
+  input 
+    position: absolute
+    cursor: pointer
+    z-index: 1
+    opacity: 0
+    &:checked+label::before
+      background-image: url('../img/svg/checkbox.svg')
+  label
+    display: inline-block
+    align-items: center
+    font-size: 16px
+    user-select: none
+    &::before
+      content: ''
+      display: inline-block
+      width: 15px
+      height: 15px
+      border: 1px solid #adb5bd
+      border-radius: 100%
+      margin-right: 0.5em
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 60% 60%
+

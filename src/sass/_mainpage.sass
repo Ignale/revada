@@ -1,0 +1,1043 @@
+.toUp.is-visible
+  visibility: visible
+  transform: translate3d(0, 0, 0)
+  opacity: 1
+.toupcont
+  align-items: end
+.toUp
+  visibility: hidden
+  position: fixed
+  background-color: #fff
+  padding: 10px
+  border-radius: 10px
+  display: flex
+  z-index: 10
+  bottom: 102px
+  align-items: center
+  transform: translate3d(0, 200%, 0)
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  opacity: 0
+
+  @media (max-width: 1024px)
+    bottom: 5vw
+    right: 5vw
+  &_text
+    a
+      font-size: 16px
+      font-weight: 400
+      line-height: 21px
+      text-decoration: none
+      color: $primary-colour
+  &_logo
+    margin-left: 11px
+.popUp_search
+  display: none
+  position: fixed
+  overflow: scroll
+  width: 100%
+  height: calc(100% - 90px)
+  background-color: #fff
+  z-index: 15
+  top: 91px
+  padding-top: 70px
+  input
+    padding-top: 25px
+    padding-bottom: 25px
+    font-size: 24px
+    padding-left: 78px
+  span
+    position: absolute
+    top: 50%
+    left: 30px
+    transform: translateY(-50%)
+  @media (max-width: 480px)
+    top: 83px
+    padding-top: 20px
+    input
+      font-size: 16px
+      padding-top: 17px
+      padding-bottom: 17px
+      padding-left: 43px
+    span
+      left: 17px
+      img
+        width: 15px
+
+.result_text
+  margin-top: 25px
+  font-size: 14px
+  font-weight: 400
+  color: $secondary-text
+  text-align: center
+.result_content
+  margin-top: 40px
+  overflow-y: auto
+  height: 70vh
+.result_item
+  padding-top: 20px
+  padding-bottom: 30px
+  border-bottom: 1px solid $blue-grey
+  &__title  
+    font-weight: 600
+    font-size: 22px
+    color: $primary-colour
+
+  &__exerpt 
+    margin-top: 10px
+    font-size: 16px
+    font-weight: normal
+  &__link
+    margin-top: 15px
+    font-size: 14px
+    font-weight: normal
+    color: $secondary-text
+
+
+.popUp_video__opacity
+  position: fixed
+  display: none
+  z-index: 10
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0, 0.5)
+
+.close_video
+  position: fixed
+  top: -20px
+  right: -20px
+  cursor: pointer
+  z-index: 15
+.popUp_video__container
+  position: fixed
+  display: none
+  z-index: 15
+  top:50%
+  left:50%
+  transform: translate(-50%, -50%)
+  box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+.popUp_video__wrapper
+  overflow: hidden
+  border-radius: 15px
+
+.video_link__play
+  position: absolute
+  bottom: 43px
+  left: 43px
+  
+.video_link
+  position: absolute
+  z-index: 2
+  width: 100%
+  height: 100%
+  top: 0px
+  left: 0px
+  &__play
+    
+  a
+    display: block
+    width: 100%
+    height: 100%
+  img 
+    width: 100%
+    height: auto
+.video_circle
+  position: relative
+  width: 138px
+  height: 138px
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  @media (max-width: 480px)
+    left: 30px
+  b
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+    position: absolute
+    left: 50%
+    font-size: 24px
+    color: $primary-colour
+    font-weight: 500
+    line-height: 50px
+  b:nth-of-type(-n+20)
+    bottom: 50%
+    transform-origin: 0% 100%
+    padding-bottom: 50%
+  b:nth-of-type(1) 
+    text-transform: uppercase
+    transform: rotate(260deg)
+  b:nth-of-type(2) 
+    transform: rotate(270deg)
+  b:nth-of-type(3) 
+    transform: rotate(280deg)
+  b:nth-of-type(4) 
+    transform: rotate(350deg)
+  b:nth-of-type(5) 
+    transform: rotate(360deg)
+  b:nth-of-type(6) 
+    transform: rotate(370deg)
+  b:nth-of-type(7) 
+    transform: rotate(380deg)
+  b:nth-of-type(8) 
+    transform: rotate(390deg)
+  b:nth-of-type(9) 
+    transform: rotate(400deg)
+  b:nth-of-type(10) 
+    transform: rotate(410deg)
+  b:nth-of-type(11) 
+    transform: rotate(420deg)
+  b:nth-of-type(12) 
+    transform: rotate(430deg)
+  b:nth-of-type(13) 
+    transform: rotate(480deg)
+  b:nth-of-type(14) 
+    transform: rotate(490deg)
+  b:nth-of-type(15) 
+    transform: rotate(500deg)
+  b:nth-of-type(16) 
+    transform: rotate(510deg)
+  b:nth-of-type(17) 
+    transform: rotate(520deg)
+  b:nth-of-type(18) 
+    transform: rotate(530deg)
+  b:nth-of-type(19) 
+    transform: rotate(540deg)
+  b:nth-of-type(20) 
+    transform: rotate(550deg)
+.video_circle
+  &:hover
+    // width: 250px
+    // height: 250px
+    // .video_link__play
+    //   bottom: 95px
+    //   left: 100px
+    //   &:hover
+    //     img
+    //       filter: brightness(0.8)
+    // b:nth-of-type(-n+20)
+    //   font-size: 29px
+    b:nth-of-type(1)
+      text-transform: uppercase
+      transform: rotate(310deg)
+    b:nth-of-type(2) 
+      transform: rotate(320deg)
+    b:nth-of-type(3) 
+      transform: rotate(330deg)
+    b:nth-of-type(4) 
+      transform: rotate(400deg)
+    b:nth-of-type(5) 
+      transform: rotate(410deg)
+    b:nth-of-type(6) 
+      transform: rotate(420deg)
+    b:nth-of-type(7) 
+      transform: rotate(430deg)
+    b:nth-of-type(8) 
+      transform: rotate(440deg)
+    b:nth-of-type(9) 
+      transform: rotate(450deg)
+    b:nth-of-type(10) 
+      transform: rotate(460deg)
+    b:nth-of-type(11) 
+      transform: rotate(470deg)
+    b:nth-of-type(12) 
+      transform: rotate(480deg)
+    b:nth-of-type(13) 
+      transform: rotate(530deg)
+    b:nth-of-type(14) 
+      transform: rotate(540deg)
+    b:nth-of-type(15) 
+      transform: rotate(550deg)
+    b:nth-of-type(16) 
+      transform: rotate(560deg)
+    b:nth-of-type(17) 
+      transform: rotate(570deg)
+    b:nth-of-type(18) 
+      transform: rotate(580deg)
+    b:nth-of-type(19) 
+      transform: rotate(590deg)
+    b:nth-of-type(20) 
+      transform: rotate(600deg)
+
+.desc_line1, .desc_line2, .desc_line3, .part_line1, .part_line2, .part_line3
+  width: 100%
+  @media (max-width: 768px)
+    display: none
+  img 
+    width: 100%
+.features
+  margin-top: 10vw
+  margin-bottom: 10vw  
+.nav
+  border-bottom: 1px solid #E1E4F3
+  @media (max-width: 768px)
+    padding-top: 20px
+    padding-bottom: 20px
+.nav_btn__group
+  display: none
+  @media (max-width: 768px)
+    display: flex
+    width: 100px
+    justify-content: space-between
+    div
+      display: flex
+      width: 42px
+      height: 42px
+      border-radius: 15px
+      background-color: $blue-grey
+      align-items: center
+      justify-content: center
+
+.row
+  display: flex
+.row_header
+  justify-content: space-between
+.row_nav
+  width: 100%
+  height: 100%
+  align-self: center
+  justify-content: space-around
+  li
+    display: flex
+    align-items: center
+  @media (max-width: 768px)
+    height: auto
+    align-items: center
+.nav_label
+  display: flex
+  align-items: center
+  @media (max-width: 768px)
+    display: none
+
+.nav_label__wrapper
+  display: flex
+
+.nav_label-sm
+  display: none
+  @media (max-width: 768px)
+    display: flex
+    flex-direction: column
+.nav_label__phone
+  font-size: 14px
+  font-weight: 700
+  line-height: 18px
+  margin-top: 5px
+  color: $primary-colour
+.nav_label__text
+  margin-left: 6px  
+
+.close_btn
+  display: none
+  z-index: -1
+  @media (max-width: 768px)
+    display: block
+    position: absolute
+    z-index: 20
+    right: 15px
+    top: 15px
+.close_sumb
+  z-index: 2
+  display: none
+  @media (max-width: 768px)
+    display: block
+    position: absolute
+    z-index: 20
+    right: 15px
+    top: 15px
+
+
+.nav_search-sm
+  display: none
+  @media (max-width: 768px)
+    display: flex
+    justify-content: center
+    width: 40vw
+    background-color: $blue-grey
+    margin-top: 20px
+    padding-top: 15px
+    padding-bottom: 15px
+    border-radius: 15px
+  @media (max-width: 480px)
+    width: 75vw
+.nav_contacts-sm
+  display: none
+  opacity: 0
+  @media (max-width: 768px)
+    display: block
+    margin-top: 30px  
+    opacity: 1
+.nav_menu
+  display: flex
+  height: 90px
+  min-width: 50%
+  position: relative
+  z-index: 5
+  align-items: center
+  transform: translateX(0)
+  @media (max-width: 768px)
+    flex-direction: column
+    position: fixed
+    width: 100%
+    height: 100vh
+    padding-top: 40px
+    background-color: #fff
+    z-index: 15
+    top: 0px
+    left: 0px
+    transform: translateX(100%)
+    .row
+      flex-direction: column
+      text-align: center
+    ul
+      li:nth-of-type(n)
+        padding-bottom: 15px
+  ul
+    transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+    li
+      transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+      list-style: none
+      a
+        font-size: 16px
+        font-weight: 500
+        color: $text-color
+        text-decoration: none
+        transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+        span
+          margin-right: 6px
+          @media (max-width: 768px)
+            display: none
+    li.menu-item-has-children
+      cursor: pointer
+      transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+      ul
+        display: flex
+        position: absolute
+        visibility: hidden
+        opacity: 0
+        background-color: #fff
+        top: 92px
+        left: -13px
+        flex-direction: column
+        padding-top: 30px
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.07)
+        border-radius: 0px 0px 15px 15px
+        @media (max-width: 768px)
+          transform: translateX(100%)
+          border-radius: 0
+          z-index: 15
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+
+
+        span.toparr
+          position: absolute
+          top: -16px 
+          left: 38px
+          @media (max-width: 768px)
+            display: none
+            
+        li
+          padding-top: 7px
+          padding-bottom: 7px
+          padding-left: 30px
+          padding-right: 35px
+          @media (max-width: 768px)
+            display: none
+          a
+            line-height: 130%
+            font-size: 16px
+            font-weight: 400
+          &:hover
+            background-color: $blue-grey
+        li.imp
+          display: flex
+          justify-content: space-between
+          @media (max-width: 768px)
+            display: flex
+          a
+            font-weight: 700
+
+        li.withborder
+          margin-bottom: 0
+          margin-top: 10px
+          padding-top: 28px
+          padding-bottom: 28px
+          border-top: 1px solid $blue-grey
+          border-radius: 0px 0px 15px 15px
+          @media (max-width: 768px)
+            padding-top: 7px
+            padding-bottom: 7px
+    li.menu-item-has-children:hover
+      transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+      ul.sub-menu
+        visibility: visible
+        opacity: 1
+        transition: all 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+        
+
+  
+.nav_search
+  display: flex
+  background-color: #E1E4F3
+  align-items: center
+  padding-left: 30px
+  flex-wrap: nowrap
+  padding-right: 30px
+  @media (max-width: 768px)
+    display: none
+  &__text, .nav_search__close
+    flex: 0 0 content
+    color: $primary-colour
+    font-size: 18px
+    cursor: pointer
+    font-weight: 500
+    span
+      margin-left: 12px
+    @media (max-width: 768px)
+.nav_search__close
+  display: none
+
+  
+.nav_contacts
+  max-width: 25%
+  padding-left: 44px
+  display: flex
+  align-items: center
+  @media (max-width: 768px)
+    display: none
+.nav_contacts__phone
+  font-size: 16px
+  font-weight: 700
+.nav_contacts__mail
+  font-size: 14px
+  font-weight: 400
+
+.feat_wrapper
+  position: relative
+  display: flex
+  justify-content: space-between
+  @media (max-width: 1024px)
+    justify-content: space-around
+    align-items: center
+    padding-top: 10vw
+    padding-bottom:120px
+  @media (max-width: 480px)
+    flex-direction: column
+    align-items: flex-start
+  
+  img.line
+    width: 80%
+    height: auto
+    position: absolute
+    left: 240px
+    top: 71px
+    @media (max-width: 1024px)
+      width: 50%
+      top:300px
+      z-index: -1
+    @media (max-width: 768px)
+      display: none
+
+.feat_group__left
+  max-width: 50%
+  @media (max-width: 480px)
+    max-width: 100%
+
+.feat_group_right
+  @media (max-width: 480px)
+    max-width: 100%
+    margin-top: 62px
+
+.year
+  font-size: 24px
+  font-weight: 700
+  color: $primary-colour
+
+
+.feat_title
+  font-size: 60px
+  font-weight: 700
+  margin-top: 25px
+
+.feat_btn
+  margin-top: 70px
+
+
+.areas_wrapper
+  display: flex
+  justify-content: center
+.areas_wrapper
+  img
+    width: 100%
+    height: auto
+.area_meal
+  padding-top: 90px
+  height: 500px
+  @media (max-width: 1024px)
+    padding: 0
+  
+.area_meal__title
+  text-align: center
+  font-size: 22px
+  font-weight: 600
+  margin-bottom: 58px
+  @media (max-width: 1024px)
+    margin: 0
+  @media (max-width: 768px)
+    text-align: left
+    font-size: 16px
+.area_meal__img
+  margin-left: 30px
+  @media (max-width: 768px)
+    margin-left: 0
+
+.area_agro__img, .area_meal__img, .area_cosm__img, .area_clean__img
+  width: 100%
+  height: auto
+  @media (max-width: 1024px)
+    width: 40%
+    img
+      width: 100%
+.area_cosm__img
+  @media (max-width: 480px)
+    width: 100%
+
+.area_col2
+  display: flex
+  width: 40%
+  flex-direction: column
+  justify-content: space-between
+
+.area_col2__row1
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  max-height: 240px
+  a
+    max-width: 50%
+    @media (max-width: 1024px)
+      max-width: 100%
+
+.area_agro, .area_cosm
+  margin-left: 15px
+  width: 225px
+  height: 240px
+  @media (max-width: 1024px)
+    width: auto
+    height: auto
+.area_agro__img 
+  align-self: flex-end
+  @media (max-width: 1024px)
+    img
+      transform: scale(-1, 1)
+.area_agro__title
+  text-align: center
+  font-size: 18px
+  font-weight: 600
+  margin-top: 48px
+  margin-bottom: 27px
+  @media (max-width: 768px)
+    font-size: 16px
+  a
+    font-size: 18px
+    font-weight: 600
+    text-align: center
+  @media (max-width: 1024px)
+
+
+.area_cosm__title
+  font-size: 18px
+  font-weight: 600
+  text-align: center
+  margin-top: 35px
+  margin-bottom: 15px
+  @media (max-width: 768px)
+    text-align: left
+    font-size: 16px
+
+.area_col2__clean
+  height: 245px
+  flex-direction: row-reverse
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-right: 40px
+  @media (max-width: 1024px)
+    flex-direction: row
+    padding-right: 0px
+
+.area_col2__clean
+  margin-left: 15px
+  @media (max-width: 1024px)
+    margin-left: 0px
+
+.area_clean__title
+  font-size: 22px
+  font-weight: 600
+  text-align: center
+  @media (max-width: 1024px)
+    text-align: left
+  @media (max-width: 768px)
+    font-size: 16px
+.area_clean__img
+  @media (max-width: 1024px)
+    
+.area_plast
+  width: 320px
+  padding-top: 90px
+  margin-left: 15px
+  height: 500px
+  @media (max-width: 1024px)
+    width: auto
+    padding: 0
+
+
+  
+.area_plast__title
+  font-size: 22px
+  text-align: center
+  margin-bottom: 67px
+  text-align: center
+  font-weight: 600
+  @media (max-width: 768px)
+    text-align: left
+    min-width: 130px
+    font-size: 16px
+
+.area_plast__img  
+  margin-left: 44px
+  text-align: right
+  @media (max-width: 480px)
+    width: 40%
+    margin-left: 0
+
+.desc_wrapper
+  display: flex
+  
+  justify-content: flex-end
+  @media (max-width: 768px)
+    padding-top: 50px
+
+
+.desc
+  position: relative
+  padding-bottom: 130px
+
+.desc_imgWrapper
+  width: 50%
+  height: 100%
+  top: 250px
+  position: absolute
+  z-index: 15
+  @media (max-width: 768px)
+    display: none
+.desc_img
+  text-align: right
+  width: 100%
+  top: 10px
+  bottom: -20px
+  position: sticky
+  left: 0px
+  img
+    width: 100%
+    height: auto
+  
+
+.desc_line1,
+.desc_line2,
+.desc_line3
+  position: absolute
+  z-index: -1
+.desc_line2
+  top: 15vw  
+.desc_line3
+  top: 30vw 
+.btn_desc
+  position: relative
+  margin-top: 98px
+  margin-bottom: 370px
+  padding: 43px 50px 50px
+.btn_desc-sm
+  display: none
+  @media (max-width: 768px)
+    display: block
+    padding-top: 30px
+    padding-bottom: 30px
+    margin-top: 30px
+    width: 100%
+
+.desc_text
+  margin-top: 15vw
+  width: 530px
+  @media (max-width: 768px)
+    width: 100%
+    margin-top: 0
+.desc_b1
+  margin-top: 50px
+.desc_b2
+  margin-top: 90px
+  p
+    margin-top: 15px
+
+.desc_b3,.desc_b4,.desc_b5
+  margin-top: 55px
+  p
+    margin-top: 15px
+.desc_link
+  margin-top: 55px
+  @media (max-width: 768px)
+    display: none
+.desc_link-sm
+  display: none
+  @media (max-width: 768px)
+    display: block
+    position: absolute
+    top: 50px
+    right: 15px
+
+.news
+  padding-top: 10vw
+  padding-bottom: 10vw
+  background-color: $light-blue
+
+
+.news_gr
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+.news_posts
+  display: flex
+  justify-content: space-between
+  margin-top: 70px 
+  @media (max-width: 768px)
+    overflow-x: auto
+.news_postCard
+  width: 370px
+  overflow: hidden
+  position: relative
+  z-index: 2
+  @media (max-width: 1024px)
+    width: 280px
+  @media (max-width: 768px)
+    flex: 0 0 300px
+    margin-right: 15px
+
+.news_showall
+  @media (max-width: 768px)
+    display: none
+.news_showall-sm
+  display: none
+  @media (max-width: 768px)
+    display: block
+.postCard_img
+  @media (max-width: 1024px)
+    height: 127px
+    img
+      transform: translateY(-50px)
+.postCard_date
+  position: absolute
+  background-color: #fff
+  padding: 12px 15px
+  border-radius: 15px
+  right: 15px
+  top: 15px
+  font-size: 16px
+  font-weight: 400
+  line-height: 16px
+  @media (max-width: 1024px)
+    font-size: 14px
+    padding: 10px
+.news_postCard
+.postCard
+  position: relative
+  &:hover
+    .postCard_text
+      transform: translateY(-64px)
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  
+
+.postCard_text
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  position: relative
+  z-index: 2
+  background-color: #fff
+  padding-right: 30px
+  padding-left: 30px
+  padding-bottom: 35px
+  @media (max-width: 1024px)
+    padding-right: 20px
+    padding-left: 20px
+.readmore
+  position: absolute
+  bottom: 0px
+  height: 64px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  border-bottom-left-radius: 33px
+  border-bottom-right-radius: 33px
+  background-color: $primary-colour
+  z-index: 1
+  a
+    margin-right: 10px
+    color: #fff
+    font-size: 18px
+    font-weight: 600
+
+
+.postCard_title
+  padding-top: 30px
+  font-size: 22px
+  line-height: 35px
+  font-weight: 600
+  @media (max-width: 1024px)
+    font-size: 18px
+
+.postCard_exert
+  font-size: 16px
+  font-weight: 300
+  line-height: 25.6px
+  margin-top: 10px
+  @media (max-width: 1024px)
+    font-size: 14px
+
+.postCard_tag
+  display: flex
+  margin-top: 24px
+  a
+    font-size: 16px
+    color: $primary-colour
+    text-decoration: none
+.partners
+  padding-top: 14vw 
+  position: relative
+.part_line1, .part_line2, .part_line3
+  position: absolute
+  width: 100%
+  z-index: -1
+  @media (max-width: 768px)
+    display: none
+.part_line1
+  top:20vw  
+.part_line2
+  top:30vw  
+.part_line3
+  top:40vw  
+
+
+.letterFilter
+  margin-top: 40px
+  display: flex
+  width: 100%
+  padding: 25px 59px 25px 25px
+  background: #F1F4FFB2
+  border-radius: 25px
+  padding-left: 25px
+  padding-right: 59px
+  justify-content: space-between
+  @media (max-width: 768px)
+    overflow-x: auto
+  
+.letterFilter_el
+  @media (max-width: 768px)
+    flex: 0 0 28px
+  a
+    font-size: 18px
+    font-weight: 400
+    text-decoration: none
+    color: #555555
+.all
+  @media (max-width: 768px)
+    margin-right: 10px
+  a
+    color: $primary-colour
+
+.partners_list
+  margin-top: 10px
+.partners_row
+  display: flex
+  @media (max-width: 768px)
+    flex-direction: column
+
+.partners_el
+  width: 33%
+  margin-top: 60px
+  @media (max-width: 768px)
+    width: 100%
+  &__header
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: 400
+    line-height: 35px
+    color: $primary-colour
+  &__name
+    font-size: 16px
+    font-weight: 300
+    line-height: 23.2px
+    margin-top: 23px
+    a
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+  &__name:hover
+    a
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+      color: $primary-colour
+      text-decoration: underline
+
+
+
+.foot_cols
+  display: flex
+  justify-content: space-between
+  li
+    list-style: none
+  @media (max-width: 768px)
+    flex-direction: column
+
+.foot_logo__wrapper
+  display: flex
+  align-items: baseline
+.foot_logo__text
+    margin-left: 5px
+    align-self: bottom
+.foot_cat, .foot_nav
+  @media (max-width: 768px)
+    margin-top: 35px
+
+.foot_cat__title, .foot_nav__title
+  font-size: 14px
+  font-weight: 600
+  text-transform: uppercase
+.foot_cat__links, .foot_nav__links
+  padding-top: 10px
+  ul
+    li
+      margin-top: 15px
+      a
+        font-size: 16px
+
+        font-weight: 300
+        line-height: 21px
+
+.foot_tel
+  font-size: 20px
+  font-weight: 600
+  line-height: 26px
+.foot_mail
+  margin-top: 10px
+  a
+    text-decoration: none
+    color: $primary-colour
+    font-size: 16px
+    font-weight: 400
+    line-height: 21px
+.foot_nav
+  padding-bottom: 60px
+
+.foot_name
+  text-transform: uppercase
+  color: rgba(43, 42, 40, 0.5)
+  padding-top: 12px
+  padding-bottom: 12px
+  border-top: 1px solid #E1E4F3

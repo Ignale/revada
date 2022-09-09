@@ -1,0 +1,82 @@
+.receipt__title
+  margin-top: 64px
+.receipt_sub
+  margin-top: 23px
+  font-size: 16px
+  font-weight: 400
+  color: $secondary-text
+
+.r_title, .ingridients_val
+  display: inline-block
+  text-transform: uppercase
+  margin-bottom: 60px
+  margin-top: 50px
+  height: 2px
+  font-size: 20px
+  line-height: 20px
+  font-weight: 700
+  background-color: transparent
+  box-shadow: 0px -10px 0px -10px #e1e4f3 inset, 0px 19px 0px 8px #e1e4f3
+  @media (max-width: 480px)
+    height: auto
+    padding-top: 5px
+    padding-bottom: 5px
+    background-color: #e1e4f3
+    box-shadow: none
+.receipt_appl__name
+  font-size: 18px
+  font-weight: 400
+  margin-bottom: 15px
+
+.receipt_ingridients__name
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.receipt_ingridients__block, .r_par__block
+  display: flex
+  width: 100%
+  padding-top: 7px
+  padding-bottom: 7px
+  justify-content: space-between
+  @media (max-width: 480px)
+    border-bottom: 1px dashed $blue-grey
+    padding-top: 15px
+    padding-bottom: 15px
+.r_ingridients__name
+  flex: 0 0 25%
+  font-size: 18px
+  font-weight: 400
+
+.r_ingridients__dots
+  flex: 0 0 65%
+  border-bottom: 1px dashed $blue-grey
+  @media (max-width: 480px)
+    display: none
+.r_ingridients__val
+  flex: 0 0 10%
+  font-size: 18px
+  font-weight: 400
+  text-align: right
+
+.r_par__name, .r_par__dots, .r_par__val, .r_par__code
+  flex: 0 0 20%
+  font-size: 18px
+  font-weight: 400
+
+.r_par__dots
+  border-bottom: 1px dashed $blue-grey
+  @media (max-width: 480px)
+    display: none
+
+.r_par__code
+  text-align: right
+
+.r_rec__text
+  p
+    font-size: 17px
+    font-weight: 400
+    line-height: 160%
+
+.receipt_download
+  margin-top: 60px

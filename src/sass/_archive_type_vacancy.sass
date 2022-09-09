@@ -1,0 +1,143 @@
+.archive_title
+  margin-top: 64px
+  @media (max-width: 480px )
+    margin-top: 39px
+.archive_sub__text
+    margin-top: 23px
+    @media (max-width: 480px )
+      margin-top: 15px
+    font-size: 16px
+    font-weight: 400
+    span
+      font-weight: 600
+.archive_vacancies
+  input
+    display: none
+.vacancies_tabs
+  width: 100%
+  margin-top: 40px
+  @media (max-width: 480px )
+    margin-top: 20px
+  ul
+    display: flex
+    justify-content: space-between
+    padding-bottom: 23px
+    @media (max-width: 768px) 
+      padding-bottom: 15px 
+    label
+      cursor: pointer
+      font-size: 17px
+      font-weight: 600
+      color: $passive-dark
+      display: inline-block
+      flex: 0 0 content
+      text-align: center
+      @media (max-width: 480px)
+        font-size: 14px
+        margin-right: 15px
+  @media (max-width: 768px) 
+    overflow-x: auto
+    padding-bottom: 15px
+  .line
+    position: relative
+    margin-bottom: 50px
+    background-color: $blue-grey
+    height: 3px
+    width: 100%
+    @media (max-width: 768px)
+      display: none
+    .tab
+      position: absolute
+      width: 70px
+      height: 3px
+      background-color: $primary-colour
+      left: 0
+      @media (max-width: 480px)
+        width: 50px
+.archive_vacancies  
+  #piter:checked ~ .vacancies_tabs .line .tab
+    width: 140px
+    left: 37%
+  #rostov:checked ~ .vacancies_tabs .line .tab
+    width: 140px
+    left: 83%
+
+
+
+  #moscow:checked ~ .vacancies_tabs label[for = 'moscow']
+    color: $primary-colour
+  #piter:checked ~ .vacancies_tabs label[for = 'piter']
+    color: $primary-colour
+  #rostov:checked ~ .vacancies_tabs label[for = 'rostov']
+    color: $primary-colour
+
+    
+  .vacancies__moscow, .vacancies__piter, .vacancies__rostov
+    display: none
+
+  #moscow:checked ~ .vacancies_content .vacancies__moscow
+    display: block
+  #piter:checked  ~ .vacancies_content .vacancies__piter
+    display: block
+  #rostov:checked ~ .vacancies_content .vacancies__rostov
+    display: block
+.vacancy_card
+  margin-bottom: 20px
+  padding: 40px
+  border: 1px solid $blue-grey
+  border-radius: 25px
+  position: relative
+  @media (max-width: 480px )
+    padding: 30px 20px
+
+  &__title
+    a
+      font-size: 24px
+      @media (max-width: 480px )
+        font-size: 18px
+      font-weight: 600  
+      color: $primary-colour
+      &:hover
+        text-decoration: underline
+  &__salary
+    font-size: 17px
+    @media (max-width: 480px )
+      font-size: 15px
+    font-weight: 500
+    margin-top: 10px
+  &__occup
+    margin-top: 10px
+    font-size: 17px
+    @media (max-width: 480px )
+      font-size: 15px
+    font-weight: 500
+    color: $passive-dark
+  &__exerpt
+    margin-top: 15px
+    font-size: 17px
+    @media (max-width: 480px )
+      font-size: 15px
+    font-weight: 400
+    line-height: 160%
+  &__city
+    position: absolute
+    top: 15px
+    right: 20px
+    font-size: 17px
+    @media (max-width: 480px )
+      font-size: 14px
+      top: 10px
+      right: 15px
+    font-weight: 500
+    color: $passive-dark
+  &__hot
+    position: absolute
+    color: #E94E2C
+    font-size: 14px
+    font-weight: 400
+    top: 17px
+    left: 40px
+    @media (max-width: 480px )
+      font-size: 12px
+      left: 20px
+      top: 10px

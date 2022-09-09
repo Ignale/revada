@@ -1,0 +1,123 @@
+.cosm-cat
+  margin-top: 4vw
+  position: relative
+  @media (max-width: 768px)
+    margin-top: 6vw
+
+.cosm_btn__wrapper
+  align-self: center
+  position: absolute
+  right: 0px
+  top: 20px
+  @media (max-width: 768px)
+    display: none
+.cosm_btn__wrapper-sm
+  display: none
+  @media (max-width: 768px)
+    display: block
+    align-self: center
+    margin-top: 30px
+    width: 100%
+
+
+.cosm_btn
+  padding-top: 20px
+  padding-bottom: 20px
+  padding-right: 40px
+  padding-left: 40px
+  box-shadow: none
+  border-radius: 15px
+  @media (max-width: 768px)
+    width: 100%
+    font-size: 14px
+
+.cosm_cat__links
+  margin-top: 4vw
+  display: flex
+  justify-content: space-between
+  @media (max-width: 768px)
+    margin-top: 6vw
+    flex-direction: column
+.cosm_cat__col
+  display: flex
+  flex-direction: column
+  li
+    margin-top: 15px
+    &:first-child
+      margin-top: 0
+  li:hover
+    a
+      color: $primary-colour
+      text-decoration: underline
+  a
+    font-size: 16px
+    font-weight: 400
+    line-height: 140%
+.cosm_cat__slider
+  margin-top: 7vw
+  border-radius: 30px 
+.cosm_cat__otherCats
+  margin-top: 7vw
+  @media (max-width: 768px)
+    margin-top: 50px
+
+.otherCat
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 20px
+  padding-bottom: 20px
+  padding-right: 15px
+  border-top: 1px solid #E1E4F3
+  @media (max-width: 768px)
+
+  &:last-child
+    border-bottom: 1px solid #E1E4F3
+  a
+    font-size: 24px
+    font-weight: 500
+    @media (max-width: 768px)
+      font-size: 14px
+.slider__item
+  position: relative
+.slider_contentblock
+  display: flex
+  flex-direction: column
+  position: absolute
+  left: 7vw
+  top: 5vw
+  width: 25%
+  @media (max-width: 480px)
+    width: 90%
+    top: 20vw
+.sl_cont__pict
+  width: 50%
+  padding: 30px
+  border-radius: 30px
+  background-color: rgba(255, 255, 255, 0.3)
+  @media (max-width: 480px)
+    width: max-content
+    padding: 20px
+    border-radius: 20px
+  img
+    display: inline-block
+    width: 80px
+.sl_cont__title
+  font-size: 22px
+  font-weight: 600
+  line-height: 130%
+  margin-top: 40px
+  @media (max-width: 480px)
+    font-size: 19px    
+.sl_cont__descr
+  margin-top: 20px
+  font-size: 16px
+  font-weight: 300
+  @media (max-width: 480px)
+    font-size: 14px
+.sl_cont__link
+  margin-top: 20px
+  a
+    font-size: 16px
+    font-weight: 400
+    color: $primary-colour

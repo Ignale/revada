@@ -1,0 +1,122 @@
+.admin_panel__wrapper
+  display: flex
+  margin-top: 64px
+  @media (max-width: 768px)
+    flex-direction: column
+    margin-top: 40px
+.admin_panel__nav
+  flex: 0 0 25%
+  @media (max-width: 1024px)
+    flex: 0 0 35%
+  @media (max-width: 768px)
+    flex: 0 0 100%  
+.account_panel
+  padding: 40px
+  @media (max-width: 1024px)
+  border: 1px solid $blue-grey
+  border-radius: 20px
+  a.change_pass, a.private_data
+    color: $primary-colour
+  span
+    margin-right: 16px
+    position: relative
+  li
+    padding-block-start: 10px
+    padding-block-end: 10px
+    a
+      font-size: 16px
+      &:hover
+        color: $primary-colour
+      &:hover span img
+        fill: $primary-colour
+      &:active
+        color: $primary-colour
+
+.admin_panel__content
+  padding-left: 100px
+  @media (max-width: 1024px)
+    padding-left: 50px
+  @media (max-width: 768px)
+    margin-top: 30px
+    padding-left: 0
+  display: flex
+  flex-wrap: wrap
+  flex: 0 0 75%
+  @media (max-width: 1024px)
+    flex: 0 0 65%
+  @media (max-width: 768px)
+    flex: 0 0 100% 
+    flex-direction: column
+
+.accout_item
+  flex: 0 0 30%
+  &__btn
+    button
+      font-size: 16px
+      padding-top: 16px
+      padding-bottom: 16px
+.accout_item__label
+  font-size: 16px
+  font-weight: 400
+  color: $passive-dark
+
+.accout_item__text
+  font-size: 18px
+  font-weight: 400
+  padding-bottom: 50px
+  @media (max-width: 768px)
+    padding-bottom: 25px
+  margin-top: 10px
+
+.edit_account
+  width: 80%
+  @media (max-width: 768px)
+    width: 100%
+  .contact_form__inputs
+    margin-top: 0
+  .inputGroup
+    margin-bottom: 15px
+    span.visible, span.unvisible
+      position: absolute
+      cursor: pointer
+      width: 16px
+      height: 16px
+      top: 15px
+      right: 20px
+    span.visible
+      background: url('../img/svg/visibility-button.svg') no-repeat center
+    span.unvisible
+      background: url('../img/svg/visibility.svg') no-repeat center
+  .contact_form__submit
+    margin-top: 50px
+    button
+      padding: 15px 30px
+      @media (max-width: 768px)
+        font-size: 14px
+        width: 100%
+a.cancel
+  vertical-align: middle
+  font-size: 16px
+  font-weight: 600
+  color: $primary-colour
+  margin-left: 20px
+  @media (max-width: 768px)
+    display: block
+    text-align: center
+    margin-top: 30px
+span.message
+  margin-left: 80px
+  font-size: 14px
+  font-weight: 600
+  color: $green
+  @media (max-width: 768px)
+    display: block
+    margin-top: 15px
+    margin-left: 0
+    text-align: center
+.accout_item__btn
+  @media (max-width: 768px)
+    button
+      font-size: 14px
+      font-weight: 600
+      width: 100%

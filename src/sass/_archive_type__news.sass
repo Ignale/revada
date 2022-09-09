@@ -1,0 +1,129 @@
+.archive_type__news
+  .news_posts
+    flex-wrap: wrap
+    flex-direction: column
+    max-height: 1500px
+    @media (max-width: 480px)
+      max-height: unset
+      margin-top: 30px
+
+    .news_postCard
+      margin-top: 20px
+      margin-right: 20px
+      flex: 0 0 30%
+      align-self: flex-start
+      @media (max-width: 480px)
+        align-self: center
+        flex: 0 0 100%
+        margin-right: 0px
+        width: 100%
+
+.news_posts_title
+  margin-top: 64px
+  @media (max-width: 480px)
+    margin-top: 40px
+.news_posts_filter
+  @media (max-width: 480px)
+    display: none
+.news_filter
+  margin-top: 30px
+  @media (max-width: 480px)
+    margin-top: 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  select
+    font-size: 16px
+    border: none
+    option:hover
+      background-color: $primary-colour
+  input
+    display: none
+.news_tags
+  .tag_wrapper
+    display: flex
+    flex-wrap: wrap
+
+.news_tag
+  &:last-of-type
+    margin-right: 0px
+  flex: 0 0 content
+  margin-right: 25px
+  @media (max-width: 480px)
+    flex: 0 0 content  
+    margin-right: 10px
+  label
+    display: inline-block
+    cursor: pointer
+    padding: 15px 42px
+    border-radius: 15px
+    border: 1px solid $blue-grey
+    margin-top: 25px
+    font-size: 16px
+    color: #9396A5
+    font-weight: 600
+    @media (max-width: 480px)
+      padding: 15px
+#news:checked ~ .news_tags .news_tag label[for = 'news']
+  background-color: $primary-colour
+  color: #fff
+#article:checked ~ .news_tags .news_tag label[for = 'article']
+  background-color: $primary-colour
+  color: #fff
+#all:checked ~ .news_tags .news_tag label[for = 'all']
+  background-color: $primary-colour
+  color: #fff
+
+#post_f
+  &:focus-visible
+    outline: 1px solid $primary-colour
+  &::-ms-expand
+    display: none
+  font-size: 16px
+  padding-right: 30px
+  padding-top: 5px
+  padding-left: 5px
+  padding-bottom: 5px
+  border: none
+  border-radius: 0px
+  border-radius: .5em
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  background-color: #fff
+  background-image: url('../img/svg/arr-down-blue.svg')
+  background-repeat: no-repeat, repeat
+  background-position: right .7em top 50%, 0 0
+.page-numbers
+  text-align: center
+.news_pagination
+  margin-top: 114px
+  @media (max-width: 480px)
+    margin-top: 30px
+  li
+    display: inline-block
+    margin-left: 15px
+    margin-right: 15px
+    @media (max-width: 480px)
+      margin-left: 10px
+      margin-right: 10px
+    a
+      vertical-align: middle
+      display: inline-block
+      font-size: 16px
+      color: $secondary-text
+      @media (max-width: 480px)
+        font-size: 14px
+  & .next_page, 
+  & .prev_page
+    margin: 0
+    width: 44px
+    height: 44px
+    background-color: $primary-colour
+    border-radius: 15px
+    background-image: url('../img/svg/arr-l-white.svg')
+    background-repeat: no-repeat, repeat
+    background-position: right 50% top 50%, 0 0
+  & .next_page
+    background-image: url('../img/svg/arr-r-white.svg')
+

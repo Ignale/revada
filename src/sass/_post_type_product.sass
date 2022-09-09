@@ -1,0 +1,244 @@
+.product_name
+  margin-top: 64px
+  position: relative
+.login
+  .inputGroup
+    margin-bottom: 15px
+.contact_form__submit
+  display: block
+  button
+    padding-top: 18px
+    padding-bottom: 18px
+    width: 100%
+    @media (max-width: 480px)
+      font-size: 14px
+  .custom_checkbox
+    margin-top: 15px
+    label
+      font-size: 14px
+      color: $secondary-text
+.signin_form
+  display: none
+  min-width: 750px
+  z-index: 15
+  padding: 60px 70px
+  @media  ( max-width: 480px )
+    min-width: 100%
+    height: 100%
+    padding: 20px
+.login_form
+  display: none
+  min-width: 600px
+  z-index: 15
+  padding: 60px 70px
+  @media  ( max-width: 480px )
+    min-width: 100%
+    height: 100%
+    padding: 20px
+  
+.request_form
+  padding: 40px 20px
+  width: 320px
+  border-radius: 15px
+  .contact_form__inputs
+    input
+      font-size: 14px
+  .custom_checkbox
+    margin-top: 10px
+    label
+      font-size: 12px
+      display: inline-block
+      &::before
+        width: 10px
+        height: 10px
+  @media  ( max-width: 480px )
+    width: 100%
+    border-radius: 0px
+.success_popup__wrapper
+  display: none
+.success_popup
+  min-width: 500px  
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 100px
+  z-index: 15
+  @media  ( max-width: 480px )
+    min-width: 100%
+    height: 100%
+    border-radius: 0px
+.success_subtext
+  text-align: center
+  font-size: 16px
+  color: $secondary-text
+  margin-top: 25px
+
+.success_img
+  margin-top: 40px
+.product__logo
+  position: absolute
+  right: 0
+  top: 0
+.post_type_product 
+  form
+    position: fixed
+.request_product__btn
+  margin-top: 40px
+  button
+    font-size: 16px
+    font-weight: 600
+    padding: 15px 42px
+    border-radius: 15px
+    box-shadow: none
+.product_manufactorer, .product_descr__title, .product_appl__title, .product_links__title, .product_reciept__title, .contact_us__title
+  font-size: 24px 
+  font-weight: 600
+  margin-top: 80px
+  p
+    font-size: 17px
+    font-weight: 400
+    line-height: 160%
+  @media (max-width: 768px) 
+    margin-top: 50px
+    font-size: 18px
+.product_manufactorer
+  a
+    color: $primary-colour
+    text-decoration: underline
+
+.product_links
+  display: flex
+  @media (max-width: 768px)
+    flex-direction: column
+.product_col-2
+  flex: 0 0 50%
+.product_links__links
+  font-size: 24px
+  margin-top: 30px
+  a
+    color: $primary-colour
+    text-decoration: underline
+  @media (max-width: 768px)
+    font-size: 20px
+.product_reciept__title
+  padding-bottom: 30px
+
+.product_reciept__links
+  border-top: 1px solid $blue-grey
+.product_reciept__link
+  padding-top: 24px
+  padding-bottom: 24px
+  border-bottom: 1px solid $blue-grey
+  
+  a
+    display: flex
+    justify-content: space-between
+    font-size: 17px
+    font-weight: 400
+    color: $primary-colour
+  @media (max-width: 480px)
+    font-size: 15px
+.contact_us__contacts
+  input
+    display: none
+
+.contact_us__tabs::-webkit-scrollbar-track 
+  background: #F6F8FF
+  border-radius: 3px
+.contact_us__tabs::-webkit-scrollbar-thumb
+  background-color: $blue-grey
+  border-radius: 3px
+.contact_us__tabs::-webkit-scrollbar
+  height: 6px
+.contact_us__tabs
+  width: 100%
+  margin-top: 40px
+  ul
+    display: flex
+    justify-content: space-between
+    padding-bottom: 21px
+    @media (max-width: 768px)
+      padding-bottom: 0
+
+    label
+      cursor: pointer
+      font-size: 17px
+      font-weight: 600
+      color: $passive-dark
+      display: inline-block
+      flex: 0 0 content
+      text-align: center
+      @media (max-width: 768px)
+        padding-bottom: 15px
+        font-size: 14px
+        margin-right: 15px
+  @media (max-width: 768px) 
+    overflow-x: auto
+    padding-bottom: 15px
+  @media (max-width: 768px) 
+.line
+  position: relative
+  height: 2px
+  width: 100%
+  @media (max-width: 768px)
+    display: none
+  .tab
+    position: absolute
+    width: 70px
+    height: 2px
+    background-color: $primary-colour
+    left: 0
+    @media (max-width: 480px)
+      width: 50px
+.contact_us   
+  #piter:checked ~ .contact_us__tabs .line .tab
+    width: 140px
+    left: 15%
+  #rostov:checked ~ .contact_us__tabs .line .tab
+    width: 140px
+    left: 38%
+
+  #minsk:checked ~ .contact_us__tabs .line .tab
+    width: 140px
+    left: 62%
+
+  #kiev:checked ~ .contact_us__tabs .line .tab
+    width: 130px
+    left: 85%
+
+
+  #moscow:checked ~ .contact_us__tabs label[for = 'moscow']
+    color: $primary-colour
+    @media (max-width: 768px)
+      border-bottom: 3px solid $primary-colour
+  #piter:checked ~ .contact_us__tabs label[for = 'piter']
+    color: $primary-colour
+    @media (max-width: 768px)
+      border-bottom: 3px solid $primary-colour
+  #rostov:checked ~ .contact_us__tabs label[for = 'rostov']
+    color: $primary-colour
+    @media (max-width: 768px)
+      border-bottom: 3px solid $primary-colour
+  #minsk:checked ~ .contact_us__tabs label[for = 'minsk']
+    color: $primary-colour
+    @media (max-width: 768px)
+      border-bottom: 3px solid $primary-colour
+  #kiev:checked ~ .contact_us__tabs label[for = 'kiev']
+    color: $primary-colour
+    @media (max-width: 768px)
+      border-bottom: 3px solid $primary-colour
+
+    
+  .contact_us__moscow, .contact_us__piter, .contact_us__rostov, .contact_us__minsk, .contact_us__kiev
+    display: none
+
+  #moscow:checked ~ .contact_us__content .contact_us__moscow
+    display: block
+  #piter:checked  ~ .contact_us__content .contact_us__piter
+    display: block
+  #rostov:checked ~ .contact_us__content .contact_us__rostov
+    display: block
+  #minsk:checked ~ .contact_us__content .contact_us__minsk
+    display: block
+  #kiev:checked ~ .contact_us__content .contact_us__kiev
+    display: block

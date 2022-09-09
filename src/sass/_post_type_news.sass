@@ -1,0 +1,146 @@
+.post__title
+  margin-top: 64px
+  @media (max-width: 480px)
+    margin-top: 40px
+.post_img
+  img
+    width: 100%
+    height: auto
+.post_sub
+  margin-top: 20px
+  display: flex
+  @media (max-width: 480px)
+    margin-top: 15px
+  .post_date
+    font-size: 16px
+    font-weight: 400
+    @media (max-width: 480px)
+      font-size: 14px
+  a
+    font-size: 16px
+    font-weight: 400
+    color: $primary-colour
+    margin-left: 10px
+    @media (max-width: 480px)
+      font-size: 14px
+.post_text
+  margin-top: 40px
+  @media (max-width: 480px)
+    margin-top: 10px
+  mark
+    background-color: $blue-grey
+  p, ol, li
+    color: $text-color
+    font-size: 17px
+    font-weight: 400
+    line-height: 160%
+    @media (max-width: 480px)
+      font-size: 15px
+  ol
+    padding-left: 25px
+  li
+    list-style-type: decimal
+    padding-block-start: 3px 
+    padding-block-end: 3px 
+
+.subsrcibe_form
+  margin-top: 60px
+  padding-top: 60px
+  @media (max-width: 480px)
+    margin-top: 40px
+    padding-top: 40px
+  border-top: 1px solid $blue-grey
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .inputGroup
+    margin-top: 40px
+    
+    label
+      font-size: 16px
+      @media (max-width: 480px)
+        font-size: 14px
+    input[type = 'email']
+      font-size: 16px
+      padding-top: 24px
+      padding-bottom: 24px
+      @media (max-width: 480px)
+        padding-top: 13px
+        padding-bottom: 13px
+    @media (max-width: 480px)
+      label.active
+        transform: translateY(-190%)
+        left: 3%
+    button.subscr
+      position: absolute
+      padding: 0
+      padding-top: 16px
+      padding-bottom: 16px
+      font-size: 16px
+      width: 140px
+      right: 8px
+      top: 8px
+      img
+        display: none
+      @media (max-width: 480px)
+        right: 4px
+        top: 3px
+        padding: 16px
+        width: auto
+        span
+          display: none
+        img
+          display: block
+
+
+
+.post_h3
+  margin-top: 60px
+  @media (max-width: 480px)
+    font-size: 16px
+    margin-top: 40px
+  h3
+    font-size: 26px
+    font-weight: 600
+    @media (max-width: 480px)
+      font-size: 16px
+.subsrcibe_form__slogan
+  font-size: 24px
+  font-weight: 600
+  @media (max-width: 480px)
+    font-size: 18px
+
+.subsrcibe_form__sub
+  max-width: 430px  
+  font-size: 16px
+  font-weight: 300
+  color: #2B2A28
+  align-self: center
+  margin-top: 17px
+  @media (max-width: 480px)
+    margin-top: 15px
+    font-size: 14px
+
+.social_links
+  display: flex
+  margin-top: 50px
+  justify-content: center
+
+.social_link, .like
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 44px
+  height: 44px
+  border-radius: 14px
+  border: 1px solid #E1E4F3
+  margin-right: 15px
+
+.like
+  width: 71px
+  font-size: 18px
+  font-weight: 700
+  color: $primary-colour
+  img
+    margin-right: 7px

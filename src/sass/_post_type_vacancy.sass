@@ -1,0 +1,181 @@
+.sendresume_form
+  display: none
+  padding: 100px 70px
+  z-index: 15
+  min-width: 660px
+  @media (max-width: 768px)
+    min-width: unset
+    width: 100%
+    height: 100%
+    padding: 40px 20px
+    border-radius: 0px  
+  .contact_form__sub
+    margin-top: 10px
+  .contact_form__inputs
+    margin-top: 30px
+    .inputGroup
+      margin-top: 15px
+    .contact_form__submit
+      input
+        font-size: 18px
+        width: 100%
+        padding-top: 20px
+        padding-bottom: 20px
+        @media (max-width: 480px)
+          font-size: 14px
+          padding-top: 15px
+          padding-bottom: 15px
+        
+.chose_resume
+  margin-top: 20px
+  font-size: 16px
+  font-weight: 400
+  @media (max-width: 480px)
+    font-size: 14px
+    margin-top: 10px
+  input
+    display: none
+  label
+    font-weight: 600
+    &:hover
+      color: $primary-colour
+      text-decoration: underline
+  span  
+    cursor: pointer
+    padding: 5px
+    @media (max-width: 480px)
+      font-size: 12px
+      padding: 3px
+    border-radius: 10px
+    border: 1px solid $blue-grey
+    color: $passive-dark
+.drag_and_drop
+  padding-top: 42px
+  padding-bottom: 42px
+  border: 1px dashed $blue-grey
+  border-radius: 15px
+  margin-top: 15px
+  text-align: center
+  &::before
+    content: 'Добавить резюме'
+    font-size: 18px
+    @media (max-width: 480px)
+      font-size: 14px
+      background-size: 4%
+    background: url('../img/svg/screpka.svg')
+    background-position: 70% 0
+    @media (max-width: 480px)
+      background-position: 75% 0
+    background-repeat: no-repeat
+    display: block
+    width: 100%
+    font-weight: 600
+    color: $primary-colour
+  &::after
+    content: 'Файлы: doc, docx, txt, rtf, odt, pdf'
+    font-size: 14px
+    margin-top: 15px
+    display: block
+    font-weight: 400
+    color: $passive-dark
+    margin-top: 15px
+.dropped
+  position: relative
+  padding-top: 42px
+  padding-bottom: 42px
+  border: 1px dashed $blue-grey
+  border-radius: 15px
+  margin-top: 15px
+  text-align: center
+  font-size: 18px
+  font-weight: 600
+  color: $green
+  background-color: rgba(12, 164, 27, 0.05)
+  border: 1px dashed rgba(12, 164, 27, 0.2)
+  &::after
+    content: 'Файл добавлен'
+    font-size: 14px
+    margin-top: 15px
+    display: block
+    font-weight: 400
+    color: $passive-dark
+    margin-top: 15px
+.trash
+  display: inline-block
+  margin-left: 15px
+  vertical-align: middle
+  cursor: pointer
+
+.onMouse
+  background-color: rgba(12, 164, 27, 0.05)
+  border: 1px dashed rgba(12, 164, 27, 0.2)
+.error_drag
+  background: rgba(233, 78, 44, 0.05)
+  border: 1px dashed rgba(233, 78, 44, 0.5)
+.message
+  font-size: 14px
+  @media (max-width: 480px)
+    font-size: 12px
+  font-weight: 400
+  margin-top: 8px
+  text-align: center
+.success_message
+  color: $green
+.error_message
+  color: $error-message
+.post_vacancy
+  &__title
+    margin-top: 64px
+    @media (max-width: 480px)
+      margin-top: 39px
+  &__salary
+    font-size: 24px
+    font-weight: 500
+    margin-top: 15px
+    @media (max-width: 480px)
+      font-size: 18px
+      margin-top: 10px
+  &__occup
+    font-size: 24px
+    margin-top: 15px
+    font-weight: 500
+    color: $passive-dark
+    @media (max-width: 480px)
+      font-size: 18px
+      margin-top: 10px
+
+  &__send 
+    width: 100%
+    margin-top: 40px
+    @media (max-width: 480px)
+      margin-top: 30px
+    button
+      width: 100%
+      font-size: 16px
+      font-weight: 600
+      @media (max-width: 480px)
+        font-size: 14px
+        padding: 12px 76px
+
+  &__descr
+    margin-top: 10px
+    .vacancy_title
+      margin-top: 40px
+      @media (max-width: 480px)
+        margin-top: 30px
+      h3
+        font-size: 24px
+        @media (max-width: 480px)
+          font-size: 18px
+        font-weight: 600
+    .vacancy_text 
+      margin-top: 20px
+      ul
+        padding-left: 20px   
+        li
+          font-size: 17px
+          @media (max-width: 480px)
+            font-size: 14px
+          font-weight: 400 
+          list-style: disc
+          line-height: 160%

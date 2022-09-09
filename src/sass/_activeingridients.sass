@@ -1,0 +1,619 @@
+.opacity
+  display: none
+  z-index: 10
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background-color: rgba(0,0,0, 0.5)
+.act_popup__filter
+  display: none
+  position: absolute
+  max-width: 1200px
+  top:50%
+  left:50%
+  transform: translate(-50%, -50%)
+  background-color: #fff
+  z-index: 20
+  width: 100%
+  border-radius: 15px
+  box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+  @media (max-width: 768px)
+    position: fixed
+    width: 100%
+    height: 100%
+    border-radius: 0px
+  
+.more_info__popup
+  display: none
+  @media (max-width: 768px)
+    display: none
+    position: fixed
+    border-radius: 30px
+    box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+    padding: 20px
+    z-index: 15
+    top:50%
+    left:50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+
+    p
+      font-size: 14px
+      line-height: 18px
+    span
+      position: absolute
+      top: 10px
+      right: 20px
+    .item_comp
+      margin-top: 20px
+  @media (max-width: 480px)
+    position: fixed
+    border-radius: 0px
+    width: 100%
+    height: 100%
+    overflow-y: auto  
+.add_info__popup
+  display: none
+  min-width: 400px
+  position: fixed
+  z-index: 15
+  border-radius: 30px
+  box-shadow: 0px 5px 25px rgba(86, 94, 131, 0.1)
+  padding: 55px 70px
+  padding-bottom: 119px
+  z-index: 15
+  top:50%
+  left:50%
+  transform: translate(-50%, -50%)
+  background-color: #fff
+  @media (max-width: 480px)
+    width: 100%
+    min-width: unset
+    height: 100%
+    border-radius: 0px
+    padding: 38px
+  .add_info__title
+    margin-top: 50px
+    font-size: 16px
+    font-weight: 500
+    color: $passive-dark
+  .add_info__link
+    margin-top: 15px
+    a
+      font-size: 18px
+.act_close, .popup_city__close, .popup_contats__close, .popup_contactForm__close
+  position: absolute
+  cursor: pointer
+  z-index: 1
+  top: 30px
+  right: 30px
+.act_close
+  top: 19px
+  right: 20px
+.popup_city__close
+  top: 50px
+  right: 50px
+  width: 20px
+  height: 20px
+.act_popup__city
+  position: absolute
+  z-index: 15
+  display: none
+  width: 400px
+  height: 450px
+  @media (max-width: 480px)
+    position: fixed
+    width: 100%
+    height: 100%
+    border-radius: 0px
+  
+.popup_city__wrapper
+  display: flex
+  flex-direction: column  
+  width: 100%
+  height: 100%
+  text-align: center
+  align-items: center
+  justify-content: center
+  
+
+    
+.popup_city
+  font-size: 19px
+  margin-top: 20px
+  font-weight: 600
+  color: $primary-colour
+  cursor: pointer
+  &:first-child
+    margin-top: 0
+
+.popup_city__contacts
+  position: absolute
+  display: none
+  padding: 70px
+  z-index: 15
+  min-width: 825px
+  @media (max-width: 768px)
+    padding: 50px
+    min-width: 750px
+  @media (max-width: 480px)
+    min-width: unset
+    position: fixed
+    width: 100%
+    height: 100%
+    padding: 40px 20px
+    overflow-y: auto
+  
+
+.contacts_city__cont
+  margin-top: 10px
+  display: flex
+  align-items: center
+  span
+    cursor: pointer
+    font-size: 16px
+    margin-left: 7px
+    font-weight: 400
+    color: $primary-colour
+    border-bottom: 1px solid $primary-colour
+    @media (max-width: 480px)
+      font-size: 14px
+.contacts_city
+  font-size: 16px
+  font-weight: 400
+  color: $secondary-text
+  @media (max-width: 480px)
+    font-size: 14px
+.contacts_managers
+  display: flex
+  justify-content: space-between
+  margin-top: 40px
+  @media (max-width: 480px)
+    flex-direction: column
+    margin-top: 30px
+.contacts_manager
+  flex: 0 0 49%
+  padding: 50px
+  background-color: $light-blue
+  border-radius: 25px
+  margin-left: 10px
+  @media (max-width: 768px)
+    padding: 30px
+  &:first-of-type
+    margin-left: 0
+
+  @media (max-width: 480px)
+    padding: 30px 25px
+    margin-top: 15px
+    margin-left: 0
+    &:first-child
+      margin-top: 0
+
+.contacts_manager__area
+  font-size: 18px
+  font-weight: 600
+  @media (max-width: 480px)
+    font-size: 16px
+.contacts_manager__name
+  margin-top: 20px
+.contacts_manager__name, .contacts_manager__number, .contacts_manager__mail
+  font-size: 16px
+  font-weight: 400
+  @media (max-width: 480px)
+    font-size: 14px
+.contacts_manager__number, .contacts_manager__mail
+  margin-top: 10px
+  a
+    color: $primary-colour
+.consultForm_btn
+  button
+    font-size: 16px
+    margin-top: 25px
+    
+.contact_form, .request_form
+  position: fixed
+  display: none
+  min-width: 650px
+  z-index: 15
+  padding: 80px 70px
+  @media (max-width: 768px)
+    min-width: 600px
+  .inputGroup
+    margin-top: 12px
+  @media (max-width: 480px)
+    min-width: unset
+    position: fixed
+    width: 100%
+    height: 100%
+    padding: 40px 20px
+  .counter
+    position: absolute
+    top: 600px
+    right: 70px
+    color: $primary-colour
+    @media (max-width: 480px)
+      position: absolute
+      top: 462px
+      right: 20px
+
+
+.contact_form__sub
+  font-size: 16px
+  font-weight: 400
+  color: $secondary-text
+  margin-top: 10px
+  @media (max-width: 480px)
+    font-size: 14px
+.contact_form__inputs
+  margin-top: 40px
+  @media (max-width: 480px)
+    margin-top: 30px
+
+
+.contact_form__submit
+  margin-top: 30px
+  button.cf
+    width: 70%
+  @media (max-width: 480px)
+    margin-top: 25px
+    button.cf
+      width: 100%
+
+.apf_item
+  position: relative
+  margin-bottom: 10px
+  input 
+    position: absolute
+    cursor: pointer
+    z-index: 1
+    opacity: 0
+    &:checked+label::before
+      background-image: url('../img/svg/checkbox.svg')
+  label
+    display: inline-flex
+    align-items: center
+    font-size: 16px
+    user-select: none
+    &::before
+      content: ''
+      display: inline-block
+      width: 15px
+      height: 15px
+      border: 1px solid #adb5bd
+      border-radius: 100%
+      margin-right: 0.5em
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 60% 60%
+
+    
+.apf_title
+  display: flex
+  align-items: center
+  padding-left: 30px
+  height: 53px
+  @media (max-width: 768px)
+    height: auto
+    padding-top: 20px
+    padding-bottom: 20px
+  br
+    display: none
+    @media (max-width: 768px)
+      display: block
+
+.apf_cat
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  height: 350px
+  padding: 30px
+  border-top: 1px solid #E1E4F3
+  border-bottom: 1px solid #E1E4F3
+  @media (max-width: 768px)
+    width: 100%
+    flex-wrap: nowrap
+    overflow-x: auto
+    max-height: 400px
+.apf_btn
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 94px
+  .btn-secondary, .btn
+    box-shadow: none
+    padding: 15px 50px
+    font-size: 16px
+    border-radius: 15px
+    @media (max-width: 768px)
+      font-size: 14px
+      padding: 12px 32px
+  .btn-secondary
+    color: $red-text
+    margin-left: 15px
+    @media (max-width: 768px)
+      font-size: 14px
+      padding: 12px 25px
+
+
+.act_title
+  margin-top: 64px
+  @media ( max-width: 768px )
+    margin-top: 40px
+    
+
+.act_subcat__title
+  margin-top: 20px
+  font-size: 18px
+  font-weight: 400
+  @media ( max-width: 768px )
+    font-size: 14px
+    margin-top: 10px
+
+.consult_btn
+  position: absolute
+  right: 0
+  top: 130px
+  @media ( max-width: 768px )
+    position: static
+    margin-top: 30px
+    width: 70%
+  button
+    box-shadow: none
+    padding: 20px 63px
+    border-radius: 15px
+    @media ( max-width: 768px )
+      width: 100%
+      padding: 0
+      padding-top: 20px
+      padding-bottom: 20px
+      font-size: 14px
+
+.filter
+  margin-top: 50px
+  overflow: hidden
+  display: flex
+  align-items: center
+  @media ( max-width: 768px )
+    margin-top: 20px
+    width: 100%
+    flex-direction: column
+    justify-content: center
+
+
+.filter_cat
+  display: none
+  @media ( max-width: 768px )
+    display: block
+    width: 100%
+    button
+      padding: 0
+      width: 100%
+      font-size: 14px
+      padding-top: 16px
+      padding-bottom: 16px  
+      margin-bottom: 37px
+.cat_btn
+  display: none
+  @media ( max-width: 768px )
+    display: block
+    margin-bottom: 30px
+    padding: 0
+    width: 100%
+
+.filter_btn
+  @media ( max-width: 768px )
+    width: 100%
+  .btn-secondary
+    @media ( max-width: 768px )
+      border-radius: 0px
+      border-right: none
+      border-left: none
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  button
+    width: 196px
+    height: 61px
+    font-size: 16px
+    box-shadow: none
+    border-radius: 15px
+    @media ( max-width: 768px )
+      width: 100%
+    
+
+    span
+      margin-left: 10px
+      align-self: center
+    &:hover
+      svg
+        fill: #fff
+
+.filter_reset
+  margin-left: 15px
+  button
+    width: 111px
+    height: 42px
+    font-size: 16px
+    box-shadow: none
+    border-radius: 15px
+    color: #FF4343
+  @media ( max-width: 768px )
+    display: none
+.filter_tags::-webkit-scrollbar-track 
+  background: #F6F8FF
+  border-radius: 3px
+.filter_tags::-webkit-scrollbar-thumb
+  background-color: $blue-grey
+  border-radius: 3px
+.filter_tags::-webkit-scrollbar
+  height: 6px
+
+.filter_tags
+  display: flex
+  padding-bottom: 20px
+  padding-top: 30px
+  margin-left: 58px
+  width: 200%
+  overflow-x: auto
+  .filter_tag
+    display: flex
+    margin-left: 10px
+    flex: 0 0 content
+    padding: 10px 20px
+    border-radius: 15px
+    border: 1px solid #E1E4F3
+    .filter_tag__name
+      vertical-align: center
+    span
+      margin-left: 10px
+  @media ( max-width: 768px )
+    display: none
+.closetag
+  cursor: pointer
+.act_section
+  display: flex
+  border-top: 1px solid #E1E4F3
+  margin-top: 30px
+  @media ( max-width: 768px )
+    margin-top: 0
+    border: none
+.act_ingridients__title
+  display: none
+  @media ( max-width: 768px )
+    display: block
+    position: relative
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid $blue-grey
+    span
+      position: absolute
+      cursor: pointer
+      top: 10px
+      right: 20px
+.act_ingridients::-webkit-scrollbar-thumb
+  background-color: $blue-grey
+  border-radius: 3px
+.act_ingridients::-webkit-scrollbar 
+  width: 6px
+.act_ingridients::-webkit-scrollbar-track 
+  background: #F6F8FF
+  border-radius: 3px
+  
+.act_ingridients
+  height: 400px
+  overflow-y: auto
+  flex: 0 0 30%
+  margin-right: 24px
+  margin-top: 30px
+  padding-right: 30px
+  @media ( max-width: 768px )
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 15
+    background-color: #fff
+    top: 0
+    left: 0
+    padding: 15px
+  ul
+    @media ( max-width: 768px )
+      margin-top: 25px
+  li
+    margin-top: 15px
+    a
+      font-size: 16px
+      font-weight: 400
+      line-height: 140%
+    &:first-child
+      margin-top: 0
+.act_result
+  border-left: 1px solid #E1E4F3
+  border-right: 1px solid #E1E4F3
+  @media ( max-width: 768px )
+    border: none
+    flex: 100%  
+
+.act_result__item
+  padding-top: 40px
+  padding-bottom: 40px
+  padding-left: 50px
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #E1E4F3
+  @media ( max-width: 768px )
+    overflow-x: hidden
+    padding: 0
+    padding-top: 25px
+    padding-bottom: 25px
+.result_item__col1
+  flex: 0 0 50%
+  @media ( max-width: 768px )
+    flex: 0 0 100%
+.result_item__col2
+  flex: 0 0 40% 
+  @media ( max-width: 768px )
+    width: 0
+    flex: 0 0 200% 
+    height: 0
+    visibility: hidden
+.item_title:hover
+  h4
+    color: $primary-colour  
+    text-decoration: underline
+.item_comp
+  margin-top: 30px
+  @media ( max-width: 768px )
+    margin: 0
+.item_comp__text, .item_purpose__text
+  p
+    font-size: 16px
+    font-weight: 400
+    line-height: 140%
+    margin-top: 20px
+    @media ( max-width: 768px )
+      font-size: 14px
+.item_popup__name
+  font-size: 14px
+  font-weight: 400
+  color: $passive-dark
+.item_comp__name, 
+.item_purpose__name
+  font-size: 14px
+  font-weight: 400
+  color: $passive-dark
+  @media ( max-width: 768px )
+    display: none
+.act_more
+  display: none
+  @media ( max-width: 768px )
+    display: inline
+    background-color: transparent
+    border: none
+    font-size: 16px
+    color: $primary-colour
+    border-bottom: 1px solid $primary-colour
+    &::hover
+      padding-bottom: 10px
+
+.item_links
+  display: flex
+  justify-content: space-between
+  .item_link
+    margin-left: 10px
+    &:first-child
+      margin-left: 0
+    a
+      font-size: 16px
+      font-weight: 14px
+      color: $primary-colour
+.item_purpose
+  margin-top: 30px
+  @media (max-width: 480px)
+    margin: 0
+.more_info__popup
+  .item_links
+    margin-top: 15px
